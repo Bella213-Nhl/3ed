@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body
+{/*
+    display: flex; */
+    min-height: 100vh; 
+    background:#fff;/*rgb(214, 229, 230);rgb(63, 62, 62); gri chaba w jat 3la  kollechi */
+}
+section {
+    margin-bottom: 100px;
+}
+
+/*---------------------------------------------Max-width------------------------------------------*/
+.max-width {
+    max-width: 1300px;
+    height: auto;
+    padding: 0 80px;
+    margin: auto;
+    
+}
+
+/* --------------------------------------------------------nav style------------------------------ */
+.nav {
+    position: fixed;/* position:sticky ; matetmachalich 3lech ?!... */
+    background:#fff;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding: 0px 10px;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+/*
+.nav .max-width {
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+}*/
+
+.nav .list li{
+    list-style: none;
+    display: inline-block;
+    /*align-items: center;*/
+}
+
+.nav .list li a{
+    padding: 3px 8px;
+    display: block;
+    color: #2f2e41;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin:0 20px;
+    transition: color 0.3s ease;
+}
+
+/*.nav .list li a:hover {
+    color: #fdb645;    
+}*/
+hr{
+    color: #2f2e41;
+}
+
+.nav img {/*
+    position: fixed;*/
+    height: 35px;
+    width: 35px;
+    margin: 5px 0;
+    margin-right: 550px;
+    
+    
+}
+/*--------------------------------------------------the banner text-----------------------------------------------------*/
+
+.text-0{
+    margin-top: 50px;
+    font-size: 75px;
+    font-weight: 600;
+    color: #2f2e41;
+    text-align: center;
+ 
+}
+
+.text{
+    font-size: 40px;
+    margin: 5px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.text span{
+
+    color: #FBB03B;
+    font-weight: 500;
+}
+/*----------------------------------------------------------footer styling--------------------------------------------------------*/
+.foot {
+    background:#2f2e41;
+    padding: 50px 4px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.foot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    text-decoration: underline;/*
+    color: rgb(83, 119, 78);*/
+ }
+
+  /*----------------------------------------------home style------------------------------------------------------- */
+  .home {
+    
+    display: flex;
+    background:transparent;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 30px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+ 
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px; 
+    color: #FBB03B;
+    margin-bottom: 40px;
+}
+
+.home .home-content .text-3{
+    color: #2f2e41;
+    font-size: 40px;
+    margin: 5px 0;
+    margin-bottom: 50px;
+}
+.home .home-content .text-3 span{
+    color: #2f2e41;
+    font-weight: 500;
+}
+.buttona {
+
+    padding: 12px 36px;
+    background:#FBB03B;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.buttona:hover{/*
+    border: 2px #583c0e solid;
+    color: #583c0e;
+    background: none;*/
+    background: #fdc366;
+    transition: ease 0.2s;
+}
+
+/************************ About Styling *******************************/
+
+.tab {
+    display: flex;
+    background: transparent;
+    height: auto;
+    padding: 100px 0;
+    color: #2f2e41;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tab .max-width {
+    margin: auto 0 auto 30px;
+}
+
+.tab .tab-content .text-1 {
+    font-size: 20px;
+}
+
+.tab .tab-content .text-2 {
+    color: #FBB03B;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+
+}
+   
+
+svg
+{
+   width: 100%;
+   height: 80vh;
+   padding: 30px 40px ;
+}
+
+#cartable
+{
+    animation: swingreverse ease-in-out 2s infinite alternate;
+    transform-origin:left;
+    cursor: pointer;
+}
+
+@keyframes swingreverse 
+{
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+
+#location
+{
+    animation: lolo 1.6s infinite alternate ;
+    transform-origin: center;
+    cursor: pointer;
+}
+@keyframes lolo {
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+#tete 
+{
+    animation: hand ease-in-out 2s infinite alternate;
+    transform-origin: left;  
+     
+}
+@keyframes hand {
+    0% { transform: rotate(0.3deg); }
+    100% { transform: rotate(-0.3deg); }
+}
